@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @class GithubRepoSearchSettings;
 
-@interface GithubRepo : NSObject
+@interface GithubRepo : NSObject <NSCopying>
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSString *ownerHandle;
@@ -18,4 +18,5 @@
 @property NSInteger forks;
 
 + (void)fetchRepos:(GithubRepoSearchSettings *)settings successCallback:(void(^)(NSArray *))successCallback;
+
 @end

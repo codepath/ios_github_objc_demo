@@ -27,6 +27,20 @@ static NSString * const kClientSecret = nil;
     self.ownerAvatarURL = jsonResult[@"owner"][@"avatar_url"];
 }
 
+- (instancetype)copyWithZone:(NSZone *)zone {
+    GithubRepo *copy = [[[self class] alloc] init];
+
+    if (copy) {
+        copy.name = self.name;
+        copy.ownerHandle = self.ownerHandle;
+        copy.ownerAvatarURL = self.ownerAvatarURL;
+        copy.stars = self.stars;
+        copy.forks = self.forks;
+    }
+
+    return copy;
+}
+
 + (void)fetchRepos:(GithubRepoSearchSettings *)settings successCallback:(void(^)(NSArray *))successCallback {
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     if (kClientId) {
