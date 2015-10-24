@@ -62,4 +62,14 @@ static NSString * const kClientSecret = nil;
         NSLog(@"Failure while trying to fetch repos");
     }];
 }
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"\n\tName:%@\n\tStars:%ld\n\tForks:%ld\n\tOwner:%@\n\tAvatar:%@\n\t",
+            self.name,
+            self.stars,
+            self.forks,
+            self.ownerHandle,
+            self.ownerAvatarURL];
+}
+
 @end

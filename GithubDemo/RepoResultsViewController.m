@@ -32,14 +32,7 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [GithubRepo fetchRepos:self.searchSettings successCallback:^(NSArray *repos) {
         for (GithubRepo *repo in repos) {
-            NSLog(@"%@", [NSString stringWithFormat:
-                   @"Name:%@\n\tStars:%ld\n\tForks:%ld,Owner:%@\n\tAvatar:%@\n\t",
-                          repo.name,
-                          repo.stars,
-                          repo.forks,
-                          repo.ownerHandle,
-                          repo.ownerAvatarURL
-                   ]);
+            NSLog(@"%@", repo);
         }
         [MBProgressHUD hideHUDForView:self.view animated:YES];
     }];
