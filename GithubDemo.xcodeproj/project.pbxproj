@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114EB9391BA8319D006B75CA /* RepoResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB9381BA8319D006B75CA /* RepoResultsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		114EB93C1BA8441F006B75CA /* GithubRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB93B1BA8441F006B75CA /* GithubRepo.m */; settings = {ASSET_TAGS = (); }; };
-		114EB93F1BA84437006B75CA /* GithubRepoSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB93E1BA84437006B75CA /* GithubRepoSearchSettings.m */; settings = {ASSET_TAGS = (); }; };
+		114EB9391BA8319D006B75CA /* RepoResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB9381BA8319D006B75CA /* RepoResultsViewController.m */; };
+		114EB93C1BA8441F006B75CA /* GithubRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB93B1BA8441F006B75CA /* GithubRepo.m */; };
+		114EB93F1BA84437006B75CA /* GithubRepoSearchSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 114EB93E1BA84437006B75CA /* GithubRepoSearchSettings.m */; };
 		6B2DDEEE1B02911A00D25281 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2DDEED1B02911A00D25281 /* AppDelegate.swift */; };
 		6B2DDEF31B02911A00D25281 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B2DDEF11B02911A00D25281 /* Main.storyboard */; };
 		6B2DDEF51B02911A00D25281 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B2DDEF41B02911A00D25281 /* Images.xcassets */; };
@@ -162,6 +162,7 @@
 				6B2DDEE51B02911A00D25281 /* Frameworks */,
 				6B2DDEE61B02911A00D25281 /* Resources */,
 				9D6BCEF48ACB612C15892C07 /* Copy Pods Resources */,
+				08C9D13E6BB7F13328AC4448 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +250,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		08C9D13E6BB7F13328AC4448 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		13DC2549F5390378461AD1E0 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
